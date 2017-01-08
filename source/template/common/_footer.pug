@@ -1,0 +1,13 @@
+footer(class=`footer ${footerMod}`)
+		.footer__top
+			.footer__navigation
+				+nav("footer", navList)
+			.footer__social
+				ul(class=`social social--circle ${socialGray}`)
+					block round
+						-var circle = true
+						include _social
+
+		.footer__bottom
+			p.footer__text Я веб-разработчик из Ярославля, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. 
+			p.footer__copyright © Александр Егоричев | создано с любовью в LoftSchool | 2016
